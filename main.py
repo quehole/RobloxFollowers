@@ -2,7 +2,7 @@ import os
 from discord.ext import commands 
 import discord, requests, random, threading, asyncio
 
-with open('Bling.txt', 'r') as cookies:
+with open('cookies.txt', 'r') as cookies:
     cookies1 = cookies.read().splitlines()
 
 bot = commands.Bot(command_prefix='.')
