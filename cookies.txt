@@ -1,1 +1,34 @@
-add your cookies here
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
+$session.Cookies.Add((New-Object System.Net.Cookie("GuestData", "UserID=-511399359", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXcb", "RBXViralAcquisition=true&RBXSource=true&GoogleAnalytics=true", "/", "www.roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.1863828917.1728908780", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga_9HRYHVCY79", "GS1.1.1728908780.1.0.1728908794.0.0.0", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("rbxas", "4cd78cb1f75029d6387574a2165eefdad34945023595c2509acf08fb1d40d5ac", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXEventTrackerV2", "CreateDate=10/31/2024 08:09:29&rbxid=2830343814&browserid=1716303210500011", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie(".ROBLOSECURITY", "_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_FE189220455FB9E84F6191AC9E4D64AAF9FE073FDB315CFCB2C11487BDF511F446F4CBB639A79C014A5E4A017CA752FE1BFF6EF8927F29A42E424D69B60F488399928F33A956F2AC056B5E75665E2135CA1D10387F4D7A7E079A92FD6244B02344283471F9A12B24CB820B902243C7C682BA723B23B9F7B161D576D7FC42CE1C6FB27C32E1E03B1CE938DD7F9498C2714FBDB6367704C71F714E251FEFB8A84FAA246B14222BE23B8B7839E16C2790D7F1EF462647FEF742F1CACEBA6E8A6B3C3EDDEEB624A9AEFD84930C5A72583C4A8F8DEF08C70C0AE79ED475734B6AAC6BCB24DB073B354D29EA7ABBB985AA188B86F218AA571E7642AF8709A3EAB959E07DCE650B72882ACEDCA7AE5C803C3C81F612DD7780CCF61708F3B4C5068FE5DF00EEB4B53B0618FFCDEC25A63A4975FD6CE3B8CE5A1B8CA37C25AAF4C3BFC2147931068E81BAFE6B676FC73B22CF8C440D1BF0274D3181BB2D1881F061CA3A06DE1AD1B225FA7BC6FCF2A619F92B746FDB412B5C36943DF3AD6A4450A65E532A24DA66D59093B6F27296D64CDEDBE6F55DDFE7B5FBEE241A39E094E72392381BE03D6720F03207C1E87CD07CD084532591B578F2683687981E2CC8AF06B26163107B25637032275A08382407D9C719B4CA9161703A855BB6F42140191A118B28E98391BDE3871DC34BABA80DBA7E86DDBE735B0AD60F4D4F9D12B35F317603012BFA95DAB3BA9CCDFD802C4827F0EA9F10CBF3FC01E69EA88BE93B937F60AE3E17AABEC2AA537700372DC52B2C3F1FE0475AB6097FAF76FD6F05F596D9255FE32F8D969AF553E0291A46D6CADDEAE8E0CE9C334F88A11F2602A2345AE858A90D4198CFC9681A2E895A2CFA3D76AFFFF9BC94B4A4094F3C5D6D6376A9A4C003E9B0C5C792A4A8BE0D2A971A31FBBFD3F99EE61EED7E9A39A5121FA69A31B8DB799725A7DD391E274C26D6EA53E3D30BBACF0CD51EA9E34708FC01D1B24813F94FA57B512C95C5941C6CE8B2E1BD1062E4A3A7D76D113236A714FA76F6D6BC5EEEF4A86495BB48F3A15BF0C48989C6D6AF9CEC64BBBB6BECC80291F73AED613B505E81F31E8226271A5680D83DCA3B382BA793F6E0", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("rbx-ip2", "1", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXSource", "rbx_acquisition_time=11/14/2024 14:12:08&rbx_acquisition_referrer=&rbx_medium=Social&rbx_source=&rbx_campaign=&rbx_adgroup=&rbx_keyword=&rbx_matchtype=&rbx_send_info=0", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXSessionTracker", "sessionid=0b59b87f-aea7-41b5-8642-af12fbc28a13", "/", ".roblox.com")))
+Invoke-WebRequest -UseBasicParsing -Uri "https://www.roblox.com/de/users/2833774692/profile" `
+-WebSession $session `
+-Headers @{
+"authority"="www.roblox.com"
+  "method"="GET"
+  "path"="/de/users/2833774692/profile"
+  "scheme"="https"
+  "accept"="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="de,de-DE;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6"
+  "cache-control"="max-age=0"
+  "priority"="u=0, i"
+  "referer"="https://www.roblox.com/de/catalog/6829585000/ZZZ-Headband-Zara-Larsson"
+  "sec-ch-ua"="`"Chromium`";v=`"130`", `"Microsoft Edge`";v=`"130`", `"Not?A_Brand`";v=`"99`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="document"
+  "sec-fetch-mode"="navigate"
+  "sec-fetch-site"="same-origin"
+  "sec-fetch-user"="?1"
+  "upgrade-insecure-requests"="1"
+}
